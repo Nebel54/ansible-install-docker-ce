@@ -33,6 +33,6 @@
 
 - name: Install docker CE
   apt:
-    pkg: "docker-ce"
-    state: latest
+    pkg: "{{ docker_package }}"
+    state: present
     update_cache: yes
